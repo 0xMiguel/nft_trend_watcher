@@ -55,7 +55,7 @@ func (m *monitor) StartMonitor()  {
 	m.CurrentTokens = map[string]TokenData{}
 	for {
 		Task.GetLatest()
-		time.Sleep(2 * time.Minute)
+		time.Sleep(40 * time.Second)
 	}
 }
 
