@@ -113,7 +113,7 @@ func (m *monitor) SendHook(tokenName string, tokenContract string, image string,
 
 	embed := api.NewEmbedBuilder()
 
-	embed.SetAuthorIcon(image)
+	embed.SetAuthorIcon("https://cdn.shopify.com/s/files/1/1061/1924/products/Money_Bag_Emoji_large.png?v=1571606064")
 	embed.SetAuthorName("New trend found")
 
 	embed.AddField("Token name", tokenName, false)
