@@ -126,6 +126,6 @@ func (m *monitor) SendHook(tokenName string, tokenContract string, image string,
 	if err != nil {
 		log.Println("error sending webhook", err)
 	}
-	
+
 	log.Println("Sent webhook")
 }
