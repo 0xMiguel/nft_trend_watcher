@@ -121,6 +121,11 @@ func (m *monitor) SendHook(tokenName string, tokenContract string, image string,
 	embed.AddField("Website", website, false)
 
 
-	message, err := hook.SendEmbeds(embed.Build())
-	log.Println(message)
+	_, err = hook.SendEmbeds(embed.Build())
+
+	if err != nil {
+		log.Println("error sending webhook", err)
+	}
+	
+	log.Println("Sent webhook")
 }
